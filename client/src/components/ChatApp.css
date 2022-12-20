@@ -1,0 +1,155 @@
+.main {
+    width: 100%;
+}
+
+
+/* chatHeader component css */
+
+.headerContainer {
+    height: 50px;
+    background-color: white;
+    border-bottom: 2px solid rgb(175, 175, 175);
+    padding: 20px;
+    margin: 0 !important;
+}
+
+.selectUser {
+    display: flex;
+}
+
+
+/* User avatar */
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 35px;
+    background-color: rgb(175, 175, 175);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+}
+
+.dropdown {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+    background-color: white;
+    z-index: 2000;
+    position: relative;
+}
+
+.dropdown-header {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-body {
+    padding: 5px;
+    border-top: 1px solid #E5E8EC;
+    display: none;
+}
+
+.dropdown-body.open {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px;
+}
+
+.dropdown-item:hover {
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 13px;
+    color: #91A5BE;
+    transform: rotate(0deg);
+    transition: all .2s ease-in-out;
+}
+
+.icon.open {
+    transform: rotate(90deg);
+}
+
+
+/* chatBody */
+
+.chatBody {
+    height: 400px;
+    background-color: white;
+    padding: 20px;
+    border-bottom: 2px solid rgb(175, 175, 175);
+    overflow-y: auto;
+    margin: 0 !important;
+}
+
+.message__recipient {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: rgba(255, 0, 0, 0.797);
+    width: fit-content;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.chatMessageBody {
+    padding: 5px;
+    margin: 0 !important;
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.message {
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 15px;
+}
+
+.sendBtn {
+    width: 80px;
+    background-color: green;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #eae3d2;
+    cursor: pointer;
+}
+
+.sendBtn:hover {
+    background-color: rgb(129, 201, 129);
+}
+
+@media only screen and (min-width: 600px) {
+    .main {
+        width: 50% !important;
+    }
+    .sendBtn {
+        width: 150px;
+    }
+}
